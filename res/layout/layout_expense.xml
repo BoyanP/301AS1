@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ExpenseActivity" >
+
+    <EditText
+        android:id="@+id/ExpenseNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:background="#FFFFFF"
+        android:hint="Enter Expense name" />
+
+    <EditText
+        android:id="@+id/ExpenseDateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ExpenseNameET"
+        android:layout_alignRight="@+id/ExpenseNameET"
+        android:layout_below="@+id/ExpenseNameET"
+        android:layout_marginTop="18dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter date(YYYY-MM-DD):" 
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/FinishExpenseAddBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/ExpenseDateET"
+        android:text="OK" />
+
+    <EditText
+        android:id="@+id/USD_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ExpenseDateET"
+        android:layout_below="@+id/ExpenseDateET"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:inputType="numberDecimal" 
+        android:hint="Enter Money Spent (USD)"/>
+ 		 <requestFocus />
+    <Spinner
+        android:id="@+id/USD_Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignBottom="@+id/USD_ET"
+        android:layout_alignLeft="@+id/FinishExpenseAddBT"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/USD_ET" 
+        android:entries="@array/Currency_Spinners"/>
+
+    <Spinner
+        android:id="@+id/CDN_Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/CDN_ET"
+        android:layout_alignLeft="@+id/USD_Spinner"
+        android:layout_alignTop="@+id/CDN_ET"
+        android:background="#FFFFFF"
+        android:entries="@array/Currency_Spinners" />
+
+    <Spinner
+        android:id="@+id/EUR_Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_above="@+id/GBP_ET"
+        android:layout_alignLeft="@+id/CDN_Spinner"
+        android:layout_alignRight="@+id/CDN_Spinner"
+        android:layout_alignTop="@+id/EUR_ET" 
+        android:entries="@array/Currency_Spinners"/>
+
+    <Spinner
+        android:id="@+id/GBP_Spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:layout_alignBottom="@+id/GBP_ET"
+        android:layout_alignLeft="@+id/EUR_Spinner"
+        android:layout_alignTop="@+id/GBP_ET" 
+        android:entries="@array/Currency_Spinners"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/USD_ET"
+        android:layout_below="@+id/ExpenseDateET"
+        android:text="hints are suggestions! USE THE SPINNERS" 
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/DescripET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/GBP_ET"
+        android:layout_below="@+id/GBP_ET"
+        android:layout_marginTop="88dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter Description" />
+
+    <EditText
+        android:id="@+id/GBP_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EUR_ET"
+        android:layout_below="@+id/EUR_ET"
+        android:layout_marginTop="26dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter money spent (GBP)"
+        android:inputType="numberDecimal" >
+
+      
+    </EditText>
+
+    <EditText
+        android:id="@+id/EUR_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CDN_ET"
+        android:layout_below="@+id/CDN_ET"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter money spent (EUR)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/CDN_ET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/USD_ET"
+        android:layout_below="@+id/USD_ET"
+        android:layout_marginTop="15dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Enter money spent (CDN)"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>

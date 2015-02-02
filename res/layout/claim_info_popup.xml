@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#333333" >
+
+    <TextView
+        android:id="@+id/claimInfoNameTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Name"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/claimInfoStatusTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/claimInfoNameTV"
+        android:text="Status" 
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/claimInfoDeleteBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/claimInfoEditClaimBT"
+        android:layout_alignBottom="@+id/claimInfoEditClaimBT"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="44dp"
+        android:text="Delete" />
+
+    <TextView
+        android:id="@+id/claimInfoDateTV"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/claimInfoStatusTV"
+        android:text="Date"
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/claimInfoEditClaimBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/claimInfoDateTV"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Edit" />
+
+    <TextView
+        android:id="@+id/claimInfoDescTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/claimInfoDeleteBT"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/claimInfoDateTV"
+        android:text="DescInfo"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

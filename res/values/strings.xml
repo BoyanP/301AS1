@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">bpeychof-ExpenseTracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="mainMenuHeader">Select Claim to view details</string>
+    <string name="email_infoHeader">Email Info:</string>
+    <string name="email_hint">Enter Email address here</string>
+    <string name="title_activity_claim">ClaimActivity</string>
+    <string name="title_activity_expense">ExpenseActivity</string>
+
+    <string-array name="Currency_Spinners">
+        <item>USD</item>
+        <item>CDN</item>
+        <item>EUR</item>
+        <item>GBP</item>
+    </string-array>
+
+    <string name="IN_PROGRESS">in Progress</string>
+    <string name="SUBMITTED">Submitted</string>
+    <string name="RETURNED">Returned</string>
+    <string name="APPROVED">Approved</string>
+    <string name="title_activity_delete">DeleteActivity</string>
+
+</resources>

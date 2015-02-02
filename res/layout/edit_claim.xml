@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333" >
+
+    <ListView
+        android:id="@+id/ExpenseListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/AddExpenseBT"
+        android:layout_alignLeft="@+id/ClaimDescET"
+        android:layout_below="@+id/ClaimDescET" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/totalCostTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saveEditsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/saveEditsButton"
+        android:text=""
+        android:textColor="#FFFFFF" />
+
+    <Button
+        android:id="@+id/saveEditsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Done" />
+
+    <EditText
+        android:id="@+id/ClaimDescET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/StartDateET"
+        android:layout_marginTop="21dp"
+        android:background="#FFFFFF"
+        android:ems="10" 
+        android:hint="Claim Desc">
+
+        <requestFocus />
+    </EditText>
+
+    <!--  <Button
+        android:id="@+id/SubmitClaimBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/AddExpenseBT"
+        android:text="Submit" />-->
+
+    <EditText
+        android:id="@+id/editClaimNameET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/totalCostTV"
+        android:layout_marginTop="17dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Claim Name" />
+
+    <Button
+        android:id="@+id/AddExpenseBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Add Expense" />
+
+    <EditText
+        android:id="@+id/EndDateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/StartDateET"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Claim End Date(YYYY-MM-DD)"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/StartDateET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editClaimNameET"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Claim Start Date(YYYY-MM-DD)"
+        android:inputType="date" />
+
+</RelativeLayout>
